@@ -1,0 +1,32 @@
+{
+  "name": "search-on-ebey",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "wdio wdio.conf.js",
+    "posttest": "allure generate ./allure-results --clean",
+    "_posttest": "allure generate ./allure-results --clean",
+    "allure": "allure open"
+  },
+  "keywords": [
+    "Selenium",
+    "Mocha",
+    "WebdriverIO"
+  ],
+  "author": "Maksim Gerasimenko",
+  "homepage": "https://github.com/mkgerasimenko",
+  "devDependencies": {
+    "@types/mocha": "5.2.5",
+    "@types/webdriverio": "4.10.3",
+    "mocha": "^5.1.0",
+    "selenium-standalone": "^6.15.3",
+    "ts-node": "7.0.0",
+    "typescript": "2.9.2",
+    "wdio-mocha-framework": "^0.5.13",
+    "wdio-selenium-standalone-service": "0.0.10",
+    "webdriverio": "^4.13.2"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.7.0",
+    "wdio-allure-reporter": "^0.8.2"
+  }
+}
